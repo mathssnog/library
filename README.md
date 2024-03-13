@@ -68,4 +68,4 @@ O banco de dados utilizado neste projeto será o PostgreSQL. Para configurar o b
 
 ## Linguagem
 
-A aplicação será desenvolvido em Python, onde podemos instalá-lo seguindo o [link](https://python.org.br/instalacao-linux/).
+- A aplicação será desenvolvido em Python, onde podemos instalá-lo seguindo o [link](https://python.org.br/instalacao-linux/).
