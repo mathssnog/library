@@ -1,70 +1,47 @@
 # Library
 
-Aplicação para gerenciamento de bibliotecas. Abaixo estão algumas considerações:
+Aplicação para gerenciamento de bibliotecas. Considerações:
 
-## Descrição da aplicação
+Sistema de gerenciamento de uma biblioteca que permite a organização e controle de livros, membros, empréstimos, devoluções e reservas. O sistema será implementado em Python, utilizando o framework Flask e PostgreSQL como banco de dados. O sistema deve:
 
-Sistema de gerenciamento de uma biblioteca que permite o a organização e controle de livros, membros, empréstimos, devoluções e reservas. O sistema será implementado em Python, utilizando o framework Flask para o backend e PostgreSQL como banco de dados. O sistema deve:
+1. Cadastrar Livros. 
+    Para o cadastro de livros vamos ter algumas variáveis como título do livro, autor(es), número de cópias disponíveis, editora e ano de publicação.
 
-1. Cadastro de Livros:
-   - Título do livro
-   - Autor(es)
-   - Número de cópias disponíveis
-   - Editora
-   - Ano de publicação
+2. Cadastrar Membros.
+    Para o cadastro de membros vamos ter algumas variáveis como nome, ID e informações pessoais.
+   
+3. Empréstimos.
+    Para o empréstimos de livros vamos ter variáveis como registro do membro que solicitou o empréstimo e sua data.
 
-2. Cadastro de Membros:
-   - Nome
-   - Número de identificação (ID do membro)
-   - Informações de contato (telefone, endereço, e-mail)
-   - Data de inscrição
+4. Devoluções. 
+    Para a devolução, será registrado o membro que realizou a devolução e sua data. Vale lembrar que pode-se aplicar multas à entregas atrasadas.
 
-3. Empréstimos:
-   - Registro de empréstimos de livros para membros
-   - Data de empréstimo
-   - Data de devolução prevista
-   - Status (pendente, em andamento, concluído)
+5. Reservas.
+    Esta seção seria para caso acontecesse uma grande demanda de um mesmo livro, onde será necessário uma fila com base na ordem de solicitação do livro.
 
-4. Devoluções:
-   - Registro de devoluções de livros
-   - Data de devolução
-   - Cobrança de multas (se aplicável)
+6. Pesquisa e Filtros.
+    Plataforma capaz de pesquisar os livros por título, autor(es) para verificar a disponibilização do mesmo.
 
-5. Reservas:
-   - Capacidade de membros reservarem livros
-   - Priorização de reservas com base na ordem de solicitação
+7. Autenticação e Controle de Acesso.
+    Criar acessos administrativos para ações administrativas.
 
-6. Pesquisa e Filtros:
-   - Pesquisa por título, autor, categoria, ISBN, etc.
-   - Filtros avançados para refinar resultados de pesquisa
+8. Notificações.
+    Notificação para os membros sobre datas de devolução e disponibilidade de reservas caso solicitado.
 
-7. Autenticação e Controle de Acesso:
-   - Autenticação de funcionários da biblioteca para realizar ações administrativas
-   - Níveis de acesso (por exemplo, administrador, bibliotecário, membro)
+10. Multas e Penalidades.
+    Seção destinada para o cálculo da multa cobrada por atraso de devolução.
 
-8. Relatórios:
-   - Geração de relatórios sobre empréstimos, devoluções, multas pendentes, etc.
+11. Gerenciamento de Estoque.
+    Seção destinada a atualizar o número de cópias de um livro quando este sofrer empréstimo e devoluções.
 
-9. Notificações:
-   - Notificar membros sobre datas de devolução, disponibilidade de reservas, etc.
-
-10. Multas e Penalidades:
-   - Atribuição e cálculo de multas por atrasos na devolução
-
-12. Gerenciamento de Estoque:
-   - Atualização do número de cópias disponíveis com base em empréstimos e devoluções
-
-14. Backup e Recuperação de Dados:
-   - Capacidade de realizar backups regulares dos dados do sistema
-
-15. Interface de Usuário: (frontend)
-   - Uma interface de usuário amigável para funcionários da biblioteca e membros
+15. Interface de Usuário (frontend).
+   - Uma interface de usuário amigável para administradores da biblioteca e membros.
 
 ## PostgreSQL
 
-O banco de dados utilizado neste projeto será o PostgreSQL. Para configurar o banco de dados localmente, temos:
+O banco de dados utilizado neste projeto será o PostgreSQL:
 
-- Instalação do PostgreSQL em postgresql.org.
+- Instalação do PostgreSQL em [postgresql.org](https://www.postgresql.org/).
 
 ## Linguagem
 
