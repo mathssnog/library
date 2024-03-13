@@ -35,7 +35,7 @@ Sistema de gerenciamento de uma biblioteca que permite a organização e control
     Seção destinada a atualizar o número de cópias de um livro quando este sofrer empréstimo e devoluções.
 
 11. Interface de Usuário (frontend).
-   - Uma interface de usuário amigável para administradores da biblioteca e membros.
+    Uma interface de usuário amigável para administradores da biblioteca e membros.
 
 **PostgreSQL**
 
